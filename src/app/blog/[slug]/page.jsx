@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default async function slug({params}) {
-    const data = await axios.get(`https://jsonplaceholder.typicode.com/posts/3`).then(data => data.data)
+    const data = await axios.get(`https://jsonplaceholder.typicode.com/posts/${params.slug}`).then(data => data.data)
     return(
     //   <div className="app-page bg-dark text-light min-vh-100 pt-3 pb-5">
     //   <div className="container">
